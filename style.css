@@ -106,7 +106,7 @@ body {
     align-content: center;
     gap: 60px;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    margin-bottom: -30px;
 }
 
 .card {
@@ -117,10 +117,12 @@ body {
     background-color: var(--secondary);
     color: var(--primary);
     box-shadow: 10px 5px 5px 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: -30px;
+    margin-top: 60px;
 }
 
-.card {
-    margin-top: 60px;
+.card:last-child {
+    margin-bottom: 60px;
 }
 
 .sub {
