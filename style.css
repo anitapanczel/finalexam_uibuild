@@ -74,6 +74,10 @@ body {
     padding: 10px;
 }
 
+.material-icons {
+    font-size: 36px;
+}
+
 .right {
     text-align: right;
 }
@@ -140,15 +144,23 @@ body {
 
 .title {
     font-size: 18px;
-    border-bottom: 1px solid var(--primary);
+    /*border-bottom: 1px solid var(--primary);*/
     font-weight: 400;
     padding: 10px;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 5%;
+    text-underline-offset: 10px;
 }
 
 .text {
     font-size: 18px;
     font-weight: 700;
     padding: 10px;
+}
+
+hr {
+    color: var(--primary);
 }
 
 .button_container {
@@ -171,6 +183,7 @@ body {
 .button_container:hover {
     background-color: var(--primary);
     color: var(--secondary);
+    border: 1px solid var(--secondary);
 }
 
 .button_text {
@@ -180,7 +193,6 @@ body {
 .arrow {
     flex: 20%;
     text-align: right;
-    font-size: 36px;
 }
 
 @media (max-width: 720px) {
