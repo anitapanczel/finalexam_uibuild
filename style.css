@@ -99,7 +99,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: auto;
     color: var(--secondary);
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,14 +132,16 @@ body {
     background-color: var(--primary);
     color: var(--secondary);
     border-radius: 50%;
-    font-weight: 400;
 }
 
 .sub_text {
+    font-family: 'Montserrat', sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-weight: 300;
+    /* a fájl kiírás ugyan Roboto font type-ot ír, de szerintem ez Montserrat */
 }
 
 .title {
@@ -193,10 +195,4 @@ hr {
 .arrow {
     flex: 20%;
     text-align: right;
-}
-
-@media (max-width: 720px) {
-    .main_container {
-        flex-direction: column;
-    }
 }
